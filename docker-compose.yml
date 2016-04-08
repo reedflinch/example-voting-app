@@ -41,7 +41,6 @@ services:
       - "db-data:/var/lib/postgresql/data"
     networks:
       - back-tier
-
 volumes:
   db-data:
 
