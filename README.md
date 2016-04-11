@@ -1,6 +1,9 @@
 Example Voting App
 ==================
 
+TODO:
+* update README with setup instructions
+
 This is an example Docker app with multiple services. It is run with Docker Compose and uses Docker Networking to connect containers together. You will need Docker Compose 1.6 or later.
 
 More info at https://blog.docker.com/2015/11/docker-toolbox-compose/
