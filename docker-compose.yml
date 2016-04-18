@@ -3,7 +3,7 @@ version: "2"
 services:
   voting-app:
     #build: ./voting-app
-    image: $REPO/voting-app:$GIT_COMMIT
+    image: $DTR/$REPO/voting-app:$GIT_COMMIT
     volumes:
      - ./voting-app:/app
     ports:
@@ -14,7 +14,7 @@ services:
 
   result-app:
     #build: ./result-app
-    image: $REPO/result-app:$GIT_COMMIT
+    image: $DTR/$REPO/result-app:$GIT_COMMIT
     volumes:
       - ./result-app:/app
     ports:
@@ -25,7 +25,7 @@ services:
 
   worker:
     #build: ./worker
-    image: $REPO/worker:$GIT_COMMIT
+    image: $DTR/$REPO/worker:$GIT_COMMIT
     networks:
       - back-tier
 
