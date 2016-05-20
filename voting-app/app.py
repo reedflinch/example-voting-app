@@ -8,8 +8,8 @@ import socket
 import random
 import json
 
-option_a = os.getenv('OPTION_A', "Waffle.io")
-option_b = os.getenv('OPTION_B', "ZenHub")
+option_a = os.getenv('OPTION_A', "Containers")
+option_b = os.getenv('OPTION_B', "Not Containers")
 hostname = socket.gethostname()
 
 redis = connect_to_redis("redis")
